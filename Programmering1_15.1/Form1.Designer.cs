@@ -190,10 +190,14 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.richTextBox1.Location = new System.Drawing.Point(12, 27);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.ShowSelectionMargin = true;
             this.richTextBox1.Size = new System.Drawing.Size(226, 74);
             this.richTextBox1.TabIndex = 13;
+            this.richTextBox1.TabStop = false;
             this.richTextBox1.Text = "";
             // 
             // menuStrip1

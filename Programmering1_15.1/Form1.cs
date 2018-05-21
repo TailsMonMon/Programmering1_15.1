@@ -25,12 +25,23 @@ namespace Programmering1_15._1 {
             newNumber += number;
         }
 
+        //      A METHOD TO CLEAR THE TEXTBOX
+        private void Clear() {
+            summary = 0;
+            newNumber = "";
+            richTextBox1.Text = "";
+        }
+
+
         //      A METHOD TO SUMMARIZE 
         private void Summarize() {
             if(newNumber != "") {
                 summary = summary + Convert.ToInt32(newNumber);
                 newNumber = "";
                 richTextBox1.Text = Convert.ToString(summary);
+            }
+            else {
+                Clear();
             }
         }
 
@@ -87,9 +98,7 @@ namespace Programmering1_15._1 {
         }
 
         private void buttonClear_Click(object sender, EventArgs e) {
-            summary = 0;
-            newNumber = "";
-            richTextBox1.Text = "";
+            Clear();
         }
 
         private void avslutaToolStripMenuItem_Click(object sender, EventArgs e) {
