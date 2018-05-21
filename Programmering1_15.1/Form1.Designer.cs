@@ -37,6 +37,12 @@
             this.buttonSummarize = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.omProgrammetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hjälpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.omProgrammetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.avslutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -190,6 +196,47 @@
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.omProgrammetToolStripMenuItem,
+            this.hjälpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(251, 24);
+            this.menuStrip1.TabIndex = 14;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // omProgrammetToolStripMenuItem
+            // 
+            this.omProgrammetToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.avslutaToolStripMenuItem});
+            this.omProgrammetToolStripMenuItem.Name = "omProgrammetToolStripMenuItem";
+            this.omProgrammetToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.omProgrammetToolStripMenuItem.Text = "Arkiv";
+            // 
+            // hjälpToolStripMenuItem
+            // 
+            this.hjälpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.omProgrammetToolStripMenuItem1});
+            this.hjälpToolStripMenuItem.Name = "hjälpToolStripMenuItem";
+            this.hjälpToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.hjälpToolStripMenuItem.Text = "Hjälp";
+            // 
+            // omProgrammetToolStripMenuItem1
+            // 
+            this.omProgrammetToolStripMenuItem1.Name = "omProgrammetToolStripMenuItem1";
+            this.omProgrammetToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.omProgrammetToolStripMenuItem1.Text = "Om programmet";
+            this.omProgrammetToolStripMenuItem1.Click += new System.EventHandler(this.omProgrammetToolStripMenuItem1_Click);
+            // 
+            // avslutaToolStripMenuItem
+            // 
+            this.avslutaToolStripMenuItem.Name = "avslutaToolStripMenuItem";
+            this.avslutaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.avslutaToolStripMenuItem.Text = "Avsluta";
+            this.avslutaToolStripMenuItem.Click += new System.EventHandler(this.avslutaToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,9 +256,14 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Min miniräknare";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -231,6 +283,11 @@
         private System.Windows.Forms.Button buttonSummarize;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem omProgrammetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem avslutaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hjälpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem omProgrammetToolStripMenuItem1;
     }
 }
 

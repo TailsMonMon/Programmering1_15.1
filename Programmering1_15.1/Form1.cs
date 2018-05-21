@@ -16,6 +16,7 @@ namespace Programmering1_15._1 {
 
         public Form1() {
             InitializeComponent();
+            MessageBox.Show("Välkommen till kalkylatorn!", "Hej!");
         }
 
         //      A METHOD TO ADD NUMBERS
@@ -88,7 +89,16 @@ namespace Programmering1_15._1 {
         private void buttonClear_Click(object sender, EventArgs e) {
             summary = 0;
             newNumber = "";
-            richTextBox1 = "";
+            richTextBox1.Text = "";
+        }
+
+        private void avslutaToolStripMenuItem_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
+
+        private void omProgrammetToolStripMenuItem1_Click(object sender, EventArgs e) {
+            FormAbout formAbout = new FormAbout();
+            formAbout.Show();
         }
     }
 }
